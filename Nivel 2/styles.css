@@ -1,0 +1,411 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+    q:before, q:after, blockquote:before, blockquote:after {
+        content: "";
+        content: none;
+    }
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary 
+{
+    display: block;
+}
+
+
+
+/*MAIN PAGE STYLES*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 2vh);
+    margin: 2vh auto;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #4a5a79;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #fff; 
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ffdcb8;
+    border-radius: 10px;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+
+/* HEADER */
+header {
+    height: 12%;
+    background:url('./images/sky.jpg') no-repeat center center/cover;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 60%;
+    background: #fff;
+    margin-left: 30px;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: right;
+}
+
+.socialMedia a{
+    margin:10px; 
+    color:#ffdcb8;
+}
+
+.socialMedia a:hover{
+    color:#fff;
+}
+
+.socialMedia a i{
+    font-size: 30px;
+}
+
+.socialMedia a i.fab.fa-pinterest-square{
+    margin-right: 20px;
+}
+
+
+/* NAVIGATION */
+.menu {
+    width: 100%;
+    height: 5%;
+    margin-bottom: 20px; 
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px  
+}
+
+.menu ul li{
+    padding: 10px 20px;
+    background-color: #ffdcb8;
+}
+
+.menu ul li a {
+    font-size: 20px;
+}
+
+.menu-button{
+    position: absolute;
+    cursor: pointer;
+    padding: 20px 20px;
+    display: none;
+}
+
+
+/* FEATURED ITEMS */
+.featuredItems{
+    height: 20%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.featuredItems h3{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+}
+
+.column1, .column2, .column3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.column1{
+    background: url('./images/mountain.jpg') no-repeat center center/cover;
+}
+
+.column2{
+    background: url('./images/sea.jpg') no-repeat center center/cover;
+}
+
+.column3 {
+    background: url('./images/city.jpg') no-repeat center center/cover;
+}
+
+
+/* ARTICLE */
+section {
+    width: 100%;
+    height: 45%;
+    background: #ffdcb8;
+    margin-bottom: 20px;
+}
+
+section h4{
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section p{
+    background: rgba(210, 211, 213, 0.4);
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+section p, section .button{
+    margin: 10px;     
+}
+
+.article1, .article2{
+    height: 48%;
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-end;
+    text-align: justify;  
+}
+
+.article1 {
+    background: url('./images/globos.jpg') no-repeat center center/cover;
+    margin-bottom: 1%;
+}
+
+.article2 {
+    background: url('./images/cascada.jpg') no-repeat center center/cover;
+}
+
+
+/* FOOTER */
+footer{
+    height: 5%;
+    background: #f0b591;
+    font-size: 12px;
+    padding: 7px 0;
+    margin-bottom: 20px;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 1000px){
+    .container{
+        width: 90%;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .menu{
+        background-color: #ffdcb8;
+    }
+
+    .menu ul{
+        display: block;
+        position: relative;
+        background: #ffdcb8; 
+        opacity: 0.9;
+        transform: translateY(-100vh);
+        transition: height 0.3s linear;
+    }
+
+    .menu ul.show{
+        transform: translateY(5vh);   
+    }
+
+    .menu ul li{
+        height: 100%;
+        text-align: center;
+    }
+
+    section h4{
+        font-size: 23px;
+        background: rgba(210, 211, 213, 0.4);
+    }
+
+    section p, section .button{
+        margin: 10px;
+        font-size: 20px;   
+    }
+
+    .article1, .article2{
+        margin: 15px 100px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 550px){
+
+    .button {
+        padding: 8px 10px;
+    }
+
+    .socialMedia a i{
+        font-size: 20px;
+    }
+
+    .menu-button{
+        padding: 10px 20px
+    }
+
+    .menu{
+        background-color: #ffdcb8;
+    }
+
+    .menu ul li{
+        padding: 5px 0;
+    }
+
+    .menu ul li a {
+        font-size: 12px;
+    }
+
+    .featuredItems{
+        display: block; 
+        height: auto;  
+    }
+
+    .featuredItems img{
+        height: 20px;
+    }
+
+    .featuredItems .button{
+        font-size: 12px;
+    }
+
+    .column1, .column2, .column3{
+        margin: 10px 0;  
+    }
+
+    section h4{
+        font-size: 15px;
+    }
+
+    section p, section .button{
+        margin: 5px;
+        font-size: 12px;   
+    }
+    .article1, .article2{
+        margin: 10px 20px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 300px){
+    
+    .logo{
+        width: 150px;
+        margin-left: 20px;
+    }
+    
+    .socialMedia a{
+        margin:5px;  
+    }
+    
+    .socialMedia a i{
+        font-size: 13px;
+    }
+
+    .socialMedia a i.fab.fa-pinterest-square{
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
