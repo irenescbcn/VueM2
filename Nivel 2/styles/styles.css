@@ -103,7 +103,7 @@ a:hover{
 /* HEADER */
 header {
     height: 12%;
-    background:url('./images/sky.jpg') no-repeat center center/cover;
+    background:url('../images/sky.jpg') no-repeat center center/cover;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -197,15 +197,15 @@ header {
 }
 
 .column1{
-    background: url('./images/mountain.jpg') no-repeat center center/cover;
+    background: url('../images/mountain.jpg') no-repeat center center/cover;
 }
 
 .column2{
-    background: url('./images/sea.jpg') no-repeat center center/cover;
+    background: url('../images/sea.jpg') no-repeat center center/cover;
 }
 
 .column3 {
-    background: url('./images/city.jpg') no-repeat center center/cover;
+    background: url('../images/city.jpg') no-repeat center center/cover;
 }
 
 
@@ -247,12 +247,12 @@ section p, section .button{
 }
 
 .article1 {
-    background: url('./images/globos.jpg') no-repeat center center/cover;
+    background: url('../images/globos.jpg') no-repeat center center/cover;
     margin-bottom: 1%;
 }
 
 .article2 {
-    background: url('./images/cascada.jpg') no-repeat center center/cover;
+    background: url('../images/cascada.jpg') no-repeat center center/cover;
 }
 
 
